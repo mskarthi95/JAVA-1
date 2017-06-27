@@ -1,18 +1,26 @@
-import java.io.*;
-import java.util.*;
- 
+package com.mycompany.app;
 
-class Book 
+public class Book {
+private int id;
+private String name, author, publiser;
+private int quantity;
+public Book(int id, String name, String author, String publiser, int quantity)
+{  
+    super();
+ this.id=id;  
+ this.name=name;  
+ this.author=author;  
+ this.publiser=publiser;
+ this.quantity=quantity;
+ }  
+public Book()
 {
- 
-    public String title;
-    public String author;
-     
-    Book(String title, String author)
-    {
-         
-        this.title = title;
-        this.author = author;
-    }
+    
 }
+
  
+@Override
+public String toString() {
+return "Book [id=" + id + ", name=" + name + ", author=" + author + ", publiser=" +publiser+ ", quantity=" + quantity + "]";
+}
+}
