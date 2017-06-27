@@ -1,0 +1,15 @@
+class Book123 {
+private int id;
+private String name, author, publiser;
+private int quantity;
+
+// Constructor 
+// Getter and Setter
+// Methods
+ 
+@Override
+public String toString() {
+return "id : " + id + ", name : " + name + ", author : " + author + ", publiser : " + publiser + ", quantity : "
++ quantity;
+}
+}
